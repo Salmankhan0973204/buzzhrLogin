@@ -1,0 +1,87 @@
+.login {
+  background: #f9fbfc;
+  .login-main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .login-title {
+      color: #4c0027;
+      font-size: 38px;
+      font-weight: 700;
+    }
+    .form {
+      display: flex;
+      width: 25rem;
+      flex-direction: column;
+
+      .textfield {
+        width: auto;
+        background: white !important;
+      }
+      .error-message {
+        color: #ff4d4f;
+        position: relative;
+
+        small {
+          margin: 30px;
+        }
+        img {
+          position: absolute;
+          top: 3px;
+        }
+      }
+      .checkbox-div {
+        display: flex;
+        justify-content: space-between;
+        .checkbox {
+          margin-top: 10px;
+          span {
+            font-size: 14px;
+            font-weight: 600;
+            padding-top: -5px;
+          }
+        }
+        .forgot-text {
+          p {
+            font-size: 14px;
+            font-weight: 500;
+            color: #f78812;
+            padding-top: 8px;
+            cursor: pointer;
+          }
+        }
+      }
+      .button {
+        &:hover {
+          background: #4c0027 !important;
+        }
+      }
+    }
+    .footer-text {
+      font-size: 14px;
+      font-weight: 500;
+      .content {
+        color: #4c0027;
+      }
+      .signUp-text {
+        color: #f78812;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .loginBg {
+    background-image: url("../../assets/login/login-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  @media screen and (max-width: 480px) {
+    .form {
+      width: 20rem !important;
+    }
+  }
+}
